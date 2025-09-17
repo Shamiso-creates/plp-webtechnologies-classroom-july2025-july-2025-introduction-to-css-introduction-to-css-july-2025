@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & The Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Basics & The Box Model</h1>
+        <p>Understanding how CSS works and how the box model affects layout</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#styling">Styling Examples</a></li>
+            <li><a href="#layout">Layout Techniques</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="intro">
+            <h2>Introduction to CSS</h2>
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+            
+            <div class="code-example">
+                /* Example CSS rule */<br>
+                selector {<br>
+                &nbsp;&nbsp;property: value;<br>
+                }
+            </div>
+            
+            <p>CSS allows you to control colors, fonts, spacing, layout, and many other aspects of HTML elements.</p>
+        </section>
+        
+        <section id="box-model">
+            <h2>The CSS Box Model</h2>
+            <p>Every element in web design is a rectangular box. The CSS box model describes how these boxes are sized and spaced.</p>
+            
+            <div class="box-model-demo">
+                <h3>Box Model Components</h3>
+                <p>Each element consists of:</p>
+                <ul>
+                    <li><strong>Content</strong>: The actual content of the box</li>
+                    <li><strong>Padding</strong>: Clears an area around the content</li>
+                    <li><strong>Border</strong>: A border that goes around the padding</li>
+                    <li><strong>Margin</strong>: Clears an area outside the border</li>
+                </ul>
+                
+                <div class="box-labels">
+                    <div class="box-label">
+                        <div class="color-swatch content-color"></div>
+                        <span>Content</span>
+                    </div>
+                    <div class="box-label">
+                        <div class="color-swatch padding-color"></div>
+                        <span>Padding</span>
+                    </div>
+                    <div class="box-label">
+                        <div class="color-swatch border-color"></div>
+                        <span>Border</span>
+                    </div>
+                    <div class="box-label">
+                        <div class="color-swatch margin-color"></div>
+                        <span>Margin</span>
+                    </div>
+                </div>
+                
+                <div class="visual-box-container">
+                    <div class="visual-box">
+                        Content
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Box-Sizing Property</h3>
+            <p>The <code>box-sizing</code> property controls how the total width and height of an element is calculated.</p>
+            
+            <div class="box-model-demo">
+                <div class="box content-box">
+                    <p>Content-Box (default)</p>
+                    <p>Width = width + padding + border</p>
+                    <p>Total: 300px + 32px + 8px = 340px</p>
+                </div>
+                
+                <div class="box border-box">
+                    <p>Border-Box</p>
+                    <p>Width = specified width (includes padding and border)</p>
+                    <p>Total: 300px</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="styling">
+            <h2>CSS Styling Examples</h2>
+            <p>CSS provides numerous properties to style HTML elements. Below are some common styling examples:</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Text Styling</h3>
+                    <p class="styled-text">
+                        This text is styled with a different font, size, and color.
+                    </p>
+                    <p class="styled-text-alt">
+                        This text has bold weight, underline, and increased letter spacing.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3>Backgrounds & Borders</h3>
+                    <div class="background-example">
+                        This element has a gradient background, dotted border, and rounded corners.
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Buttons & Interactions</h3>
+                    <button class="btn">Regular Button</button>
+                    <a href="#" class="btn btn-outline">Outline Button</a>
+                    <p>Hover over the buttons to see interactive effects.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="layout">
+            <h2>Layout Techniques</h2>
+            <p>CSS provides several methods for controlling the layout of elements on a page.</p>
+            
+            <h3>Flexbox Example</h3>
+            <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+            
+            <div class="flex-example">
+                <div class="flex-item item1">Flex Item 1</div>
+                <div class="flex-item item2">Flex Item 2</div>
+                <div class="flex-item item3">Flex Item 3</div>
+            </div>
+            
+            <h3>Spacing with Margin and Padding</h3>
+            <p>Margin creates space outside an element, while padding creates space inside.</p>
+            
+            <div class="spacing-demo">
+                <div class="spacing-example">
+                    This element has 20px padding, 30px margin, and a 5px border.
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>CSS Basics & The Box Model Assignment</p>
+        <p>Created to demonstrate understanding of CSS fundamentals</p>
+    </footer>
+</body>
+</html>
